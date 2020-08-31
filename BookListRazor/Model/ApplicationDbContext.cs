@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace BookListRazor.Model
 {
+    // Whenever we are dealing with database, we need ApplicationDbContext
+
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
