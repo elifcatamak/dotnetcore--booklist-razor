@@ -12,6 +12,8 @@ namespace BookListRazor.Pages.BookList
     {
         private readonly ApplicationDbContext _db;
 
+        // Binding means, on post we get the property that is here
+        [BindProperty]
         public Book Book { get; set; }
 
         public CreateModel(ApplicationDbContext db)
@@ -23,6 +25,23 @@ namespace BookListRazor.Pages.BookList
         {
             // We don't have to pass the empty Book object, it does that automatically
             // We will be able to access this Book inside the Create view
+        }
+
+        // Task is IActionResult because we are redirecting to a new page
+        public async Task<IActionResult> OnPost()
+        {
+            // ModelState.IsValid checks required areas in the model etc.
+            if (ModelState.IsValid)
+            {
+                await _db.Book.AddAsync(Book);
+                await _db.SaveChangesAsync();
+
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }
