@@ -55,7 +55,9 @@
                                 <button class="btn btn-danger btn-sm">Delete</button>
 
                                 <!-- Link to redirect to the edit page -->
-                                <a class="btn btn-success btn-sm text-white">Edit</a>
+                                <!-- We pass the Id of the Book to be edited as a parameter -->
+                                <!-- When Edit page opens, asp-route-id can be seen in the url -->
+                                <a asp-page="Edit" asp-route-id="@b.Id" class="btn btn-success btn-sm text-white">Edit</a>
                             </td>
                         </tr>
                     }
