@@ -52,7 +52,9 @@
                                 @Html.DisplayFor(m => b.ISBN)
                             </td>
                             <td>
-                                <button class="btn btn-danger btn-sm">Delete</button>
+                                <!-- When deleting, we need the Id of the Book -->
+                                <button asp-page-handler="Delete" asp-route-id="@b.Id" onclick="return confirm('Are you sure you want to delete?')"
+                                        class="btn btn-danger btn-sm">Delete</button>
 
                                 <!-- Link to redirect to the edit page -->
                                 <!-- We pass the Id of the Book to be edited as a parameter -->
