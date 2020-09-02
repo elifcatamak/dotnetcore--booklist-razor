@@ -6,13 +6,17 @@
 <!-- These are all Bootstrap classes -->
 <!-- Bootstrap divides a row into 12 equal columns -->
 <div class="container row p-0 m-0">
-    <div class="col-9">
+    <div class="col-6">
         <h2 class="text-info">Book List</h2>
     </div>
 
     <div class="col-3">
         <!-- If in the same directory, we can use only the page name to redirect -->
         <a asp-page="Create" class="btn btn-info form-control text-white">Create New Book</a>
+    </div>
+
+    <div class="col-3">
+        <a asp-page="Upsert" class="btn btn-info form-control text-white">Add (Upsert) New Book</a>
     </div>
 
     <!-- Using 'at' sign we can use c# syntax -->
