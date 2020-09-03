@@ -21,6 +21,7 @@ As a result, ASP.NET Core 3.1 SDK and Sql Server are required to run this projec
 
 ![ss_01.PNG](Docs/Screenshots/ss_01.PNG)
 <i>Image 1: Index Page</i>
+
 <br/>
 
 This is the main page of the project where existing books are listed.
@@ -46,10 +47,12 @@ When delete operation is confirmed by the user, Toastr messages are shown.
 
 ![ss_02.PNG](Docs/Screenshots/ss_02.PNG)
 <i>Image 2: Create Page</i>
+
 <br/>
 
 ![ss_03.PNG](Docs/Screenshots/ss_03.PNG)
 <i>Image 3: Upsert Page</i>
+
 <br/>
 
 If user clicks on the Create New Book button, Create page opens.
@@ -63,10 +66,12 @@ If user wants to opt out, Back to List button also redirects user to the Index p
 
 ![ss_04.PNG](Docs/Screenshots/ss_04.PNG)
 <i>Image 4: Edit Page</i>
+
 <br/>
 
 ![ss_05.PNG](Docs/Screenshots/ss_05.PNG)
 <i>Image 5: Upsert Page</i>
+
 <br/>
 
 If user clicks on Edit button of a certain book in the first table on Index page, Edit page opens.
@@ -80,6 +85,7 @@ If user wants to opt out, Back to List button also redirects user to the Index p
 
 ![ss_06.PNG](Docs/Screenshots/ss_06.PNG)
 <i>Image 6: Delete operation on the first table</i>
+
 <br/>
 
 If user clicks on Delete button of a certain book in the first table, default confirm box opens for delete operation.
@@ -87,10 +93,12 @@ If user proceeds to delete, the book is removed from the list. If user opts out,
 
 ![ss_07.PNG](Docs/Screenshots/ss_07.PNG)
 <i>Image 7: Delete operation on the second table</i>
+
 <br/>
 
 ![ss_08.PNG](Docs/Screenshots/ss_08.PNG)
 <i>Image 8: Toastr alert</i>
+
 <br/>
 
 If user clicks on Delete button of a certain book in the second table, an alert (SweetAlert) is shown.
